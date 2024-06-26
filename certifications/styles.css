@@ -1,0 +1,64 @@
+/* Basic styling for the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 10vh; */
+    color: #333;
+}
+
+/* Styling for the skills section */
+.skl {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    /* max-width: 600px; */
+    width: 90%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.skl h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skl span {
+    display: block;
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.skl span:hover {
+    background: #e0e0e0;
+    transform: scale(1.05);
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+    .skl {
+        padding: 20px;
+    }
+
+    .skl h1 {
+        font-size: 24px;
+    }
+
+    .skl span {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
